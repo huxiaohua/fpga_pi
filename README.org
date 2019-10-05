@@ -1,2 +1,23 @@
 * fpga_pi
-FPGA 工程的python 管理
+FPGA 工程的python 管理 \\
+该程序仅支持Linux平台
+- 仿真工具: VCS Xcelium Questasim
+- FPGA综合工具: VIVADO
+
+* YAML 文件说明
+** rtl
+用于可综合的ＲＴＬ文件，支持verilog,systemverilog
+** sim
+仿真文件，不导入vivado中
+** xdc
+xdc文件
+** ip
+ip core,文件类型为*.xci，仅用于综合
+** sim_top
+仿真顶层文件
+** incdir
+verilog,systemverilog 头文件位置
+** dpilib
+用于systemverilog仿真的DPI文件，默认格式为*.so,其他格式未测试
+** file_list
+包含其他yaml文件
